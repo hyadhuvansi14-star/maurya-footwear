@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description"
+        content="Maurya Footwear – Best footwear shop in Kashesar Bazar, Ballia. Men, Women & Kids footwear at affordable prices.">
+    <meta charset="UTF-8">
+    <title>Maurya Footwear</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        .slider {
+            position: relative;
+            max-width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: none;
+            height: 100%;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .fade {
+            animation: fadeEffect 1.5s;
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .overlay h1 {
+            font-size: 42px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .overlay p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+
+            .slider,
+            .slides img {
+                height: 140px;
+            }
+
+            .overlay h1 {
+                font-size: 28px;
+            }
+        }
+
+
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            /* background: url('background.jpg') no-repeat center center; */
+            /* background-size:; */
+        }
+
+        h2 {
+            color: #111;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .product-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .product {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .product img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+            transition: transform 0.4s ease;
+            /* smooth zoom */
+            display: block;
+            background: #f2f2f2;
+            border-radius: 5px;
+        }
+
+
+
+        .contact {
+            background: #fff;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #111;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* ===== OUR PRODUCTS HOVER EFFECT ===== */
+
+        .product-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .product {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            /* important */
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+            transition: transform 0.4s ease;
+            /* zoom smooth */
+        }
+
+        /* 🔥 HOVER ZOOM */
+        .product:hover img {
+            transform: scale(1.2);
+        }
+
+        /* 🔥 CARD LIFT EFFECT */
+        .product:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="slider">
+        <div class="slides fade">
+            <img src="image1.jpeg" alt="Shop Front">
+        </div>
+        <div class="slides fade">
+            <img src="image2.jpeg" alt="Men Footwear">
+        </div>
+        <div class="slides fade">
+            <img src="image3.jpeg" alt="Women Footwear">
+        </div>
+        <div class="slides fade">
+            <img src="image4.jpeg" alt="Kids Footwear">
+        </div>
+
+        <div class="overlay">
+            <h1>Maurya Footwear</h1>
+            <p>Quality Footwear at Affordable Prices</p>
+        </div>
+    </header>
+
+
+    <section>
+        <h2>Our Products</h2>
+        <div class="products">
+            <a href="mens.html" class="product-link">
+                <div class="product">
+                    <img src="mensfootwear.jpg" alt="Men Footwear">
+                    <p>Men's Footwear</p>
+                </div>
+            </a>
+
+            <a href="womens.html" class="product-link">
+                <div class="product">
+                    <img src="womenfootwear.jpeg" alt="Women Footwear">
+                    <p>Women's Footwear</p>
+                </div>
+            </a>
+
+            <a href="kids.html" class="product-link">
+                <div class="product">
+                    <img src="kidsfootwear.jpeg" alt="Kids Footwear">
+                    <p>Kids' Footwear</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <p><strong>📍 Address:</strong> Kashesar Bazar, Kasaundar, Ghosi Road, Ballia</p>
+            <p><strong>📞 Phone:</strong> 9598485096</p>
+            <a class="whatsapp" href="https://wa.me/919598485096" target="_blank">
+                Order on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer style="text-align:center;padding:10px;background:#111;color:#fff;margin-top:20px;">
+        © 2026 Maurya Footwear | Kashesar Bazar, Ballia
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // change image every 3 seconds
+        }
+    </script>
+
+
+</body>
+
+</html>

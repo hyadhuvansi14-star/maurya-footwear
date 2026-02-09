@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description"
+        content="Maurya Footwear – Best footwear shop in Kashesar Bazar, Ballia. Men, Women & Kids footwear at affordable prices.">
+    <meta charset="UTF-8">
+    <title>Men's Footwear | Maurya Footwear</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        .page-header {
+            background: #111;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .page-header p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        /* ===== PRODUCTS GRID ===== */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* MOBILE: 2 per row */
+            gap: 15px;
+        }
+
+        /* Desktop */
+        @media (min-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* ===== PRODUCT CARD ===== */
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-img {
+            height: 170px;
+            background: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-img img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.15);
+            /* 🔍 zoom */
+        }
+
+        .product-info {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #111;
+            margin: 5px 0;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 7px 10px;
+            background: #25D366;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin: 15px;
+            text-decoration: none;
+            color: #111;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-header">
+        <h1>Men's Footwear</h1>
+        <p>Comfort • Style • Affordable</p>
+    </div>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <div class="container">
+        <div class="products-grid">
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="mp1.jpg" alt="Men Shoes">
+                </div>
+                <div class="product-info">
+                    <h3>Men Casual Shoes</h3>
+                    <div class="price">₹899</div>
+                    <a class="whatsapp-btn" href="https://wa.me/919598485096">
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="mpa.jpeg" alt="Men Sandal">
+                </div>
+                <div class="product-info">
+                    <h3>Men Sandals</h3>
+                    <div class="price">₹599</div>
+                    <a class="whatsapp-btn" href="https://wa.me/919598485096">
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="mp11.jpeg" alt="Men Slipper">
+                </div>
+                <div class="product-info">
+                    <h3>Men Slippers</h3>
+                    <div class="price">₹399</div>
+                    <a class="whatsapp-btn" href="https://wa.me/919598485096">
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="mp21.jpeg" alt="Men Sports Shoes">
+                </div>
+                <div class="product-info">
+                    <h3>Men Sports Shoes</h3>
+                    <div class="price">₹1299</div>
+                    <a class="whatsapp-btn" href="https://wa.me/919598485096">
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
